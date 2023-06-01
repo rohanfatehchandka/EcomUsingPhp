@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+    .ab
+    {
+        height: fit-content;
+        position: relative;
+        left: 47%;
+        margin-top: 50px;
+    }
+</style>
+
+</head>
+<body class="bg-secondary">
+
+    <div class="d-flex  justify-content-center align-items-center vh-90 mt-5">
+
+        <form enctype="multipart/form-data" action="upload_products.php" method="POST" class="bg-primary p-4 text-center">
+            Upload Products
+
+            <input type="text" class="mt-3 form-control" name="name" placeholder="Product Name">
+            <input type="number" class="mt-3 form-control" name="price" placeholder="Product Price">
+            <textarea rows="5" cols="40" name="details" class="mt-3 form-control" placeholder="Details"></textarea>
+
+            <input type="file" class="mt-3 form-control" name="imfile">
+
+            <input class="mt-3 btn btn-danger" type="submit" value="Upload">
+
+        </form></div>
+        <div  >
+            <a href="view_products.php">
+                <button class="bg-success ab">
+                    View products
+                </button>
+            </a>    
+        </div>
+
+
+    
+</body>
+</html>

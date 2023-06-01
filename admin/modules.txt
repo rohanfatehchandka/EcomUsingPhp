@@ -1,0 +1,28 @@
+Login -> update session variable
+
+
+DB-SCHEMA
+-----------
+products
+    pid
+    name varchar(45)
+    details text
+    price float
+    imlocation varchar(100)
+
+orders
+
+
+validate the login status
+------------------------
+    upload products(image)
+        large files will be splitted as multiple chunks(multipart/form-data)
+        1MB bandwidth  5 MB 
+    view products
+    delete product-> receive pdt ID
+    edit product ->receive pdt ID
+    view orders->later 
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        input{
+            display: block;
+            margin-top: 15px;
+        }
+
+        form
+        {
+            height: 250px;
+            width: 200px;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgb(187, 255, 127);
+            padding:20px;
+            text-align: center;
+        }
+        .da
+        {
+            background-color: beige;
+        }
+        
+
+    </style>
+</head>
+<body class="da">
+    <div class="da" >
+        <img src="ecom.png" alt="hi">
+
+    
+    <form action="registration.php" method="POST">
+
+        <h3>Registration</h3>
+
+        <input type="text" placeholder="Username" name="username">
+
+        <input type="text" placeholder="Mobile Number" name="mobile">
+
+        <input type="password" placeholder="Type password" name="password1">
+
+        <input type="password" placeholder="Re-type password" name="password2">
+
+        <input type="submit" value="Register">
+    </form>
+</div>
+    
+</body>
+</html>

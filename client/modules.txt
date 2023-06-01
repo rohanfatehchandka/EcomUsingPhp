@@ -1,0 +1,24 @@
+
+registration
+
+login
+    validated users
+    storing username and login status in session
+    add empty cart array in the session
+    altered the table to include ID
+
+view products
+
+add to cart -> 
+    pass the pid to addtocart.php
+    session_start()
+    $localcart=$_SESSION['cart']
+    check pid is available in localcart
+        if pid available
+            echo item already in cart
+        if pid not available
+            array_push($localcart,$pid)
+
+
+    
+place order

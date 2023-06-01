@@ -1,0 +1,17 @@
+<?php
+
+include_once '../shared/connection.php';
+
+$pid=$_GET['pid'];
+$price1=$_GET['price1'];
+$sql_obj=mysqli_query($conn,"select * from products where pid=$pid");
+if($sql_obj)
+{
+    mysqli_query($sql_obj,"insert into products(price) value($price) ");
+}
+else
+{
+    echo "Error in editing, check SQL command";
+}
+
+?>
